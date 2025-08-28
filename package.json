@@ -1,0 +1,29 @@
+{
+  "name": "lrys",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun run scripts/build.js",
+    "dev:simple": "npm run build && bun run src/simple.ts",
+    "dev:with-upload": "npm run build && bun run src/with-upload.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@lit-protocol/types": "^7.3.0",
+    "dotenv": "^17.2.1",
+    "esbuild": "^0.25.9",
+    "ethers": "^6.15.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@irys/upload": "^0.0.15",
+    "@irys/upload-ethereum": "^0.0.16",
+    "@lit-protocol/auth-helpers": "^7.3.0",
+    "@lit-protocol/constants": "^7.3.0",
+    "@lit-protocol/lit-node-client-nodejs": "^7.3.0",
+    "@lit-protocol/uint8arrays": "^7.3.0",
+    "siwe": "^3.0.0"
+  }
+}
