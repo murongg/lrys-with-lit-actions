@@ -17,7 +17,7 @@ npm install
 创建 `.env` 文件：
 
 ```env
-PRIVATE_KEY=你的以太坊私钥
+PRIVATE_KEY=private key
 ```
 
 ## 使用方法
