@@ -1,11 +1,11 @@
 {
   "name": "lrys",
   "module": "index.ts",
-  "type": "module",
   "scripts": {
     "build": "bun run scripts/build.js",
     "dev:simple": "npm run build && bun run src/simple.ts",
-    "dev:with-upload": "npm run build && bun run src/with-upload.ts"
+    "dev:with-upload": "npm run build && bun run src/with-upload.ts",
+    "test": "npm run build && bun run src/deploy.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
